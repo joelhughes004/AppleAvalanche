@@ -11,8 +11,11 @@ wn.addshape(apple_image)  # Make the screen aware of the new file
 
 apple = trtl.Turtle()
 drawer = trtl.Turtle()
+drawer2 = trtl.Turtle()
+drawer3 = trtl.Turtle()
 drawer.penup()
-
+drawer2.penup()
+drawer3.penup()
 apple_size = 2
 apple.shapesize(apple_size)
 
@@ -48,6 +51,7 @@ def draw_apple(active_apple):
     drawer.penup()
     drawer.hideturtle()
 
+
     wn.update()
 
 
@@ -61,14 +65,19 @@ def apple_fall():
         apple.forward(10)
         #apple.xcor()
 
-        print("Distance to ground is:", apple.ycor())
+        print("y values is:", apple.ycor())
         y = y - 10
+    new_x = rand.randint(-120,120)
+    new_y = rand.randint(0,120)
     apple.clear()
+    apple.penup()
     apple.hideturtle()
+    apple.goto(new_x,new_y)
+    apple.showturtle()
 
 
 
-  
+
 
 
 def reset_apple():

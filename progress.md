@@ -1,2 +1,4 @@
-# AppleAvalanche
-# text on apple works as of 3/1/2021
+# Apple Avalanche Progress
+# Text on apple works 
+# After the apple falls it is hidden 
+# Random apple now works
